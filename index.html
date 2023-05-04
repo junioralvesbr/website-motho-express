@@ -16,6 +16,8 @@
 
   <link rel="stylesheet" href="./styles/global.css" />
 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
   <title>HOME | Motho Express</title>
 </head>
 
@@ -49,28 +51,47 @@
 
   <main>
     <!-- Bloco dos Parceiros -->
-    <section class="slider py-8 whitespace-nowrap overflow-hidden">
-      <div class="slide-track inline-block">
-        <img src="./images/parceiros/marisa.png" class="h-10 mx-10 inline" alt="logo da marisa">
-        <img src="./images/parceiros/mercado.png" class="h-10 mx-10 inline" alt="logo do mercado livre">
-        <img src="./images/parceiros/petlove.png" class="h-10 mx-10 inline" alt="logo da petLove">
-        <img src="./images/parceiros/renner.png" class="h-10 mx-10 inline" alt="logo da renner">
+    <div class="swiper-container swiper-container-free-mode overflow-hidden">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="./images/parceiros/marisa.png" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="./images/parceiros/mercado.png" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="./images/parceiros/petlove.png" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="./images/parceiros/renner.png" alt="">
+        </div>
       </div>
-      <div class="slide-track inline-block">
-        <img src="./images/parceiros/marisa.png" class="h-10 mx-10 inline" alt="logo da marisa">
-        <img src="./images/parceiros/mercado.png" class="h-10 mx-10 inline" alt="logo do mercado livre">
-        <img src="./images/parceiros/petlove.png" class="h-10 mx-10 inline" alt="logo da petLove">
-        <img src="./images/parceiros/renner.png" class="h-10 mx-10 inline" alt="logo da renner">
-      </div>
-      <div class="slide-track inline-block">
-        <img src="./images/parceiros/marisa.png" class="h-10 mx-10 inline" alt="logo da marisa">
-        <img src="./images/parceiros/mercado.png" class="h-10 mx-10 inline" alt="logo do mercado livre">
-        <img src="./images/parceiros/petlove.png" class="h-10 mx-10 inline" alt="logo da petLove">
-        <img src="./images/parceiros/renner.png" class="h-10 mx-10 inline" alt="logo da renner">
-      </div>
-    </section>
+      <div class="swiper-button-next swiper-button-white"></div>
+      <div class="swiper-button-prev swiper-button-white"></div>
+    </div>
   </main>
 
+  <script type="module">
+    import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.esm.browser.min.js'
+
+    const swiperOptions = {
+      loop: true,
+      autoplay: {
+        delay: 0,
+        disableOnInteraction: false
+      },
+      slidesPerView: 'auto',
+      speed: 1000,
+      grabCursor: true,
+      mousewheelControl: true,
+      keyboardControl: true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev"
+      }
+    };
+    const swiper = new Swiper(".swiper-container", swiperOptions);
+  </script>
 </body>
 
 </html>

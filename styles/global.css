@@ -15,20 +15,17 @@ body {
   letter-spacing: -0.047rem;
 }
 
-.slider>.slide-track {
-  animation: 5s slide infinite linear;
+.swiper-container {
+  height: calc(50vh - 120px);
+  margin: 60px;
 }
 
-.slider:hover .slide-track {
-  animation-play-state: paused;
+.swiper-container-free-mode>.swiper-wrapper {
+  transition-timing-function: linear;
 }
 
-@keyframes slide {
-  from {
-    transform: translateX(0);
-  }
-
-  to {
-    transform: translateX(-100%);
-  }
+.swiper-slide {
+  overflow: hidden;
+  background-position: center center;
+  background-size: cover;
 }
