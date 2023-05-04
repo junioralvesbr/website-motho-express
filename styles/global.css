@@ -14,3 +14,21 @@ body {
   overflow-wrap: break-word;
   letter-spacing: -0.047rem;
 }
+
+.slider>.slide-track {
+  animation: 5s slide infinite linear;
+}
+
+.slider:hover .slide-track {
+  animation-play-state: paused;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
