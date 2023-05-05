@@ -51,7 +51,7 @@
 
   <main>
     <!-- Bloco dos Parceiros -->
-    <div class="swiper-container swiper-container-free-mode overflow-hidden">
+    <section class="swiper-container swiper-container-free-mode overflow-hidden">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
           <img src="./images/parceiros/marisa.png" class="h-12" alt="">
@@ -78,7 +78,54 @@
           <img src="./images/parceiros/renner.png" class="h-12" alt="">
         </div>
       </div>
-    </div>
+    </section>
+
+    <!-- serviços -->
+    <section class="min-h-[90vh] bg-no-repeat bg-cover flex flex-col justify-center gap-28"
+      style="background-image: url(./images/servicos.jpg)">
+      <h2 class="font-Rubik text-white text-center text-4xl">
+        Temos a solução de entrega perfeita para </br> empresas, comércios e pequenos negócios
+      </h2>
+      <div class="flex justify-center gap-12">
+
+        <article class="bg-white rounded-lg py-4 px-6 flex flex-col gap-5 w-60">
+          <i class="ph ph-users-three text-3xl text-primary"></i>
+          <h3 class="text-primary text-xl">App para entregas emergenciais</h3>
+          <p class="text-secondary text-sm">
+            Esqueceu sua agenda em casa, nós buscamos e te entregamos rapidinho!
+          </p>
+          <a href="#" class="font-Rubik text-primary">Envie Agora</a>
+        </article>
+
+        <article class="bg-white rounded py-4 px-6 flex flex-col gap-5 w-60">
+          <i class="ph ph-currency-circle-dollar text-3xl text-primary"></i>
+          <h3 class="text-primary text-xl">Créditos em quilômetros</h3>
+          <p class="text-secondary text-sm">
+            Compre quilômetros e utilize conforme a demanda de entrega do seu negócio.
+          </p>
+          <a href="#" class="font-Rubik text-primary">Experimente grátis</a>
+        </article>
+
+        <article class="bg-white rounded py-4 px-6 flex flex-col gap-5 w-60">
+          <i class="ph ph-shopping-cart text-3xl text-primary"></i>
+          <h3 class="text-primary text-xl">Para e-comerces e marktplaces</h3>
+          <p class="text-secondary text-sm">
+            Instale nossa API no seu sistema e tenha um serviço logístico eficiente para o seu negócio local.
+          </p>
+          <a href="#" class="font-Rubik text-primary">Comece a usar agora</a>
+        </article>
+
+        <article class="bg-white rounded py-4 px-6 flex flex-col gap-5 w-60">
+          <i class="ph ph-truck text-3xl text-primary"></i>
+          <h3 class="text-primary text-xl">Aperfeiçoamento logistico</h3>
+          <p class="text-secondary text-sm">
+            Para empresas que possuem entregas e entregadores, um sistema que te traz economia de combustível, tempo e
+            melhora a distribuição da sua empresa!
+          </p>
+          <a href="#" class="font-Rubik text-primary">Comece agora</a>
+        </article>
+      </div>
+    </section>
   </main>
 
   <script type="module">
@@ -111,6 +158,7 @@
     };
     const swiper = new Swiper(".swiper-container", swiperOptions);
   </script>
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
 </body>
 
 </html>

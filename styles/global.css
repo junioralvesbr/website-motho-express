@@ -15,6 +15,13 @@ body {
   letter-spacing: -0.047rem;
 }
 
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Rubik', sans-serif;
+}
+
 .swiper-container {
   height: calc(50vh - 120px);
   margin: 60px;
