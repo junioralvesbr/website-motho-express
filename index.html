@@ -54,20 +54,30 @@
     <div class="swiper-container swiper-container-free-mode overflow-hidden">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
-          <img src="./images/parceiros/marisa.png" alt="">
+          <img src="./images/parceiros/marisa.png" class="h-12" alt="">
         </div>
         <div class="swiper-slide">
-          <img src="./images/parceiros/mercado.png" alt="">
+          <img src="./images/parceiros/mercado.png" class="h-12" alt="">
         </div>
         <div class="swiper-slide">
-          <img src="./images/parceiros/petlove.png" alt="">
+          <img src="./images/parceiros/petlove.png" class="h-12" alt="">
         </div>
         <div class="swiper-slide">
-          <img src="./images/parceiros/renner.png" alt="">
+          <img src="./images/parceiros/renner.png" class="h-12" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="./images/parceiros/marisa.png" class="h-12" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="./images/parceiros/mercado.png" class="h-12" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="./images/parceiros/petlove.png" class="h-12" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="./images/parceiros/renner.png" class="h-12" alt="">
         </div>
       </div>
-      <div class="swiper-button-next swiper-button-white"></div>
-      <div class="swiper-button-prev swiper-button-white"></div>
     </div>
   </main>
 
@@ -80,14 +90,23 @@
         delay: 0,
         disableOnInteraction: false
       },
-      slidesPerView: 'auto',
-      speed: 1000,
+      slidesPerView: 5,
+      spaceBetween: 10,
+      speed: 5000,
       grabCursor: true,
       mousewheelControl: true,
       keyboardControl: true,
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev"
+      breakpoints: {
+        320: {
+          slidesPerView: 2,
+          spaceBetween: 10
+        },
+        640: {
+          slidesPerView: 3
+        },
+        1024: {
+          slidesPerView: 5
+        }
       }
     };
     const swiper = new Swiper(".swiper-container", swiperOptions);
