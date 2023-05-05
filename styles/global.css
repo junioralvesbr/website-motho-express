@@ -23,7 +23,7 @@ h4 {
 }
 
 .swiper-container {
-  height: calc(50vh - 120px);
+  /* height: calc(50vh - 120px); */
   margin: 60px;
 }
 

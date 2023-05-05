@@ -81,12 +81,13 @@
     </section>
 
     <!-- serviços -->
-    <section class="min-h-[90vh] bg-no-repeat bg-cover flex flex-col justify-center gap-28"
+    <section class="min-h-[90vh] bg-no-repeat bg-cover bg-[60%] flex flex-col justify-center items-center gap-28 py-12"
       style="background-image: url(./images/servicos.jpg)">
-      <h2 class="font-Rubik text-white text-center text-4xl">
-        Temos a solução de entrega perfeita para </br> empresas, comércios e pequenos negócios
+      <h2 class="font-Rubik text-white text-center text-xl md:text-2xl md:max-w-[650px] xl:text-4xl xl:max-w-[850px]">
+        Temos a solução de entrega perfeita para empresas, comércios e pequenos negócios
       </h2>
-      <div class="flex justify-center gap-12">
+
+      <div class="flex flex-wrap justify-center gap-12">
 
         <article class="bg-white rounded-lg py-4 px-6 flex flex-col gap-5 w-60">
           <i class="ph ph-users-three text-3xl text-primary"></i>
@@ -145,8 +146,11 @@
       keyboardControl: true,
       breakpoints: {
         320: {
-          slidesPerView: 2,
+          slidesPerView: 1,
           spaceBetween: 10
+        },
+        376: {
+          slidesPerView: 2
         },
         640: {
           slidesPerView: 3
