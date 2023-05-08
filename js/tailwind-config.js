@@ -11,6 +11,10 @@ export default tailwind.config = {
         third: '#871159',
         white: '#fff'
       },
+      backgroundImage: {
+        'services': 'url(./images/servicos.jpg)',
+        'howTo': 'url(./images/entregas.jpg)'
+      }
     }
   }
 }
