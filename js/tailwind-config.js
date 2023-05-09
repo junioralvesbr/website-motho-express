@@ -9,7 +9,8 @@ export default tailwind.config = {
         primary: '#44413E',
         secondary: '#99948F',
         third: '#871159',
-        white: '#fff'
+        white: '#fff',
+        whiteAlfa: 'rgba(255,255,255,0.8)',
       },
       backgroundImage: {
         'services': 'url(./images/servicos.jpg)',
