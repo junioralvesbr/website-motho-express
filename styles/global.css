@@ -37,6 +37,8 @@ h4 {
   background-size: cover;
 }
 
+/* overlay do header mobile */
+
 .overlay:after {
   content: '';
   position: absolute;
