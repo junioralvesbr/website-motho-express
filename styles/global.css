@@ -24,7 +24,7 @@ h4 {
 
 .swiper-container {
   /* height: calc(50vh - 120px); */
-  margin: 60px;
+  padding: 20px 0;
 }
 
 .swiper-container-free-mode>.swiper-wrapper {

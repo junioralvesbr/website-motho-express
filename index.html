@@ -94,36 +94,36 @@
   <main>
     <!-- Bloco dos Parceiros -->
     <section class="swiper-container swiper-container-free-mode overflow-hidden">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <img src="./images/parceiros/cocamar.png" alt="">
+      <div class="swiper-wrapper items-center">
+        <div class="swiper-slide w-64">
+          <img src=" ./images/parceiros/canahwine.png" class="w-full" alt="">
         </div>
-        <div class="swiper-slide">
-          <img src="./images/parceiros/confeitamos.jpeg" alt="">
+        <div class="swiper-slide w-64">
+          <img src=" ./images/parceiros/cocamar.png" class="w-full" alt="">
         </div>
-        <div class="swiper-slide">
-          <img src="./images/parceiros/labinga.jpeg" alt="">
+        <div class="swiper-slide w-64">
+          <img src=" ./images/parceiros/confeitemos.png" class="w-full" alt="">
         </div>
-        <div class="swiper-slide">
-          <img src="./images/parceiros/ladylinda.png" alt="">
+        <div class="swiper-slide w-64">
+          <img src=" ./images/parceiros/luvi.png" class="w-full" alt="">
         </div>
-        <div class="swiper-slide">
-          <img src="./images/parceiros/mix.svg" alt="">
+        <div class="swiper-slide w-64">
+          <img src=" ./images/parceiros/drogamais.png" class="w-full" alt="">
         </div>
-        <div class="swiper-slide">
-          <img src="./images/parceiros/canaWine.jpeg" alt="">
+        <div class="swiper-slide w-64">
+          <img src=" ./images/parceiros/ladylinda.png" class="w-full" alt="">
         </div>
-        <div class="swiper-slide">
-          <img src="./images/parceiros/drogamais.jpeg" alt="">
+        <div class="swiper-slide w-64">
+          <img src=" ./images/parceiros/mix.png" class="m-autow-full" alt="">
         </div>
-        <div class="swiper-slide">
-          <img src="./images/parceiros/superga.png" alt="">
+        <div class="swiper-slide w-64">
+          <img src=" ./images/parceiros/laluna.png" class="w-full" alt="">
         </div>
-        <div class="swiper-slide">
-          <img src="./images/parceiros/laluna.jpg" alt="">
+        <div class="swiper-slide w-64">
+          <img src=" ./images/parceiros/superga.png" class="w-full" alt="">
         </div>
-        <div class="swiper-slide">
-          <img src="./images/parceiros/luvi.jpeg" alt="">
+        <div class="swiper-slide w-64">
+          <img src=" ./images/parceiros/labinga.png" class="w-full" alt="">
         </div>
       </div>
     </section>
@@ -349,27 +349,28 @@
         delay: 0,
         disableOnInteraction: false
       },
-      slidesPerView: 5,
-      spaceBetween: 10,
-      speed: 3000,
+      slidesPerView: 'auto',
+      spaceBetween: 1,
+      speed: 5000,
       grabCursor: true,
       mousewheelControl: true,
       keyboardControl: true,
-      breakpoints: {
-        320: {
-          slidesPerView: 1,
-          spaceBetween: 10
-        },
-        376: {
-          slidesPerView: 2
-        },
-        640: {
-          slidesPerView: 3
-        },
-        1024: {
-          slidesPerView: 5
-        }
-      }
+      // breakpoints: {
+      //   320: {
+      //     slidesPerView: 2,
+      //     spaceBetween: 1
+      //   },
+      //   376: {
+      //     slidesPerView: 2,
+      //     spaceBetween: 1
+      //   },
+      //   640: {
+      //     slidesPerView: 3
+      //   },
+      //   1024: {
+      //     slidesPerView: 4
+      //   }
+      // }
     };
     const swiper = new Swiper(".swiper-container", swiperOptions);
   </script>
