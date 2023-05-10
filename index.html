@@ -95,35 +95,35 @@
     <!-- Bloco dos Parceiros -->
     <section class="swiper-container swiper-container-free-mode overflow-hidden">
       <div class="swiper-wrapper items-center">
-        <div class="swiper-slide w-64">
-          <img src=" ./images/parceiros/canahwine.png" class="m-auto" alt="">
+        <div class="swiper-slide">
+          <img src=" ./images/parceiros/canahwine-cortado.png" class="m-auto h-[50px]" alt="">
         </div>
-        <div class="swiper-slide w-64">
-          <img src=" ./images/parceiros/cocamar.png" class="m-auto" alt="">
+        <div class="swiper-slide">
+          <img src=" ./images/parceiros/cocamar-cortado.png" class="m-auto h-[50px]" alt="">
         </div>
-        <div class="swiper-slide w-64">
-          <img src=" ./images/parceiros/confeitemos.png" class="m-auto" alt="">
+        <div class="swiper-slide">
+          <img src=" ./images/parceiros/confeitemos-cortado.png" class="m-auto h-[50px]" alt="">
         </div>
-        <div class="swiper-slide w-64">
-          <img src=" ./images/parceiros/luvi.png" class="m-auto" alt="">
+        <div class="swiper-slide">
+          <img src=" ./images/parceiros/luvi-cortado.png" class="m-auto h-[50px]" alt="">
         </div>
-        <div class="swiper-slide w-64">
-          <img src=" ./images/parceiros/drogamais.png" class="m-auto" alt="">
+        <div class="swiper-slide">
+          <img src=" ./images/parceiros/drogamais-cortado.png" class="m-auto h-[50px]" alt="">
         </div>
-        <div class="swiper-slide w-64">
-          <img src=" ./images/parceiros/ladylinda.png" class="m-auto" alt="">
+        <div class="swiper-slide">
+          <img src=" ./images/parceiros/ladylinda-cortado.png" class="m-auto h-[50px]" alt="">
         </div>
-        <div class="swiper-slide w-64">
-          <img src=" ./images/parceiros/mix.png" class="m-auto" alt="">
+        <div class="swiper-slide">
+          <img src=" ./images/parceiros/mix.png" class="m-auto h-[50px]" alt="">
         </div>
-        <div class="swiper-slide w-64">
-          <img src=" ./images/parceiros/laluna.png" class="m-auto" alt="">
+        <div class="swiper-slide">
+          <img src=" ./images/parceiros/laluna-cortado.png" class="m-auto h-[50px]" alt="">
         </div>
-        <div class="swiper-slide w-64">
-          <img src=" ./images/parceiros/superga.png" class="m-auto" alt="">
+        <div class="swiper-slide">
+          <img src=" ./images/parceiros/superga-cortado.png" class="m-auto h-[50px]" alt="">
         </div>
-        <div class="swiper-slide w-64">
-          <img src=" ./images/parceiros/labinga.png" class="m-auto" alt="">
+        <div class="swiper-slide">
+          <img src=" ./images/parceiros/labinga-cortado.png" class="m-auto h-[50px]" alt="">
         </div>
       </div>
     </section>
@@ -364,28 +364,25 @@
         delay: 0,
         disableOnInteraction: false
       },
-      slidesPerView: 'auto',
-      spaceBetween: 1,
+      slidesPerView: '5',
       speed: 5000,
       grabCursor: true,
       mousewheelControl: true,
       keyboardControl: true,
-      // breakpoints: {
-      //   320: {
-      //     slidesPerView: 2,
-      //     spaceBetween: 1
-      //   },
-      //   376: {
-      //     slidesPerView: 2,
-      //     spaceBetween: 1
-      //   },
-      //   640: {
-      //     slidesPerView: 3
-      //   },
-      //   1024: {
-      //     slidesPerView: 4
-      //   }
-      // }
+      breakpoints: {
+        320: {
+          slidesPerView: 2,
+        },
+        376: {
+          slidesPerView: 2,
+        },
+        640: {
+          slidesPerView: 3
+        },
+        1024: {
+          slidesPerView: 4
+        }
+      }
     };
     const swiper = new Swiper(".swiper-container", swiperOptions);
   </script>
