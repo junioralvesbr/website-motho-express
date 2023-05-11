@@ -34,8 +34,6 @@ h4 {
 .swiper-slide {
   overflow: hidden;
   background-position: center center;
-  background-size: cover;
-  filter: brightness(1)
 }
 
 /* overlay do header mobile */
