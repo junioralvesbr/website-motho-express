@@ -43,7 +43,7 @@ h4 {
   position: absolute;
   inset: 0;
   background-color: rgba(0, 0, 0, 0.6);
-  z-index: 0;
+  z-index: 10;
 }
 
 @media (min-width: 1024px) {
