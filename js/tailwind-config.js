@@ -13,8 +13,8 @@ export default tailwind.config = {
         whiteAlfa: 'rgba(255,255,255,0.8)',
       },
       backgroundImage: {
-        'services': 'url(./images/servicos.jpg)',
-        'howTo': 'url(./images/entregas.jpg)'
+        'image-servicos': 'url(./images/servicos.webp)',
+        'image-howTo': 'url(./images/entregas.webp)'
       }
     }
   }
