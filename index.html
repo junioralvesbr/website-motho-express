@@ -26,7 +26,7 @@
 <body>
   <!-- MODAL -->
   <div id="popup-modal" tabindex="-1" data-modal="modal"
-    class="fixed top-0 left-0 right-0 z-50 p-4 backdrop-blur-lg flex justify-center items-center overflow-x-hidden overflow-y-auto md:inset-0 h-screen max-h-full">
+    class="hidden fixed top-0 left-0 right-0 z-50 p-4 backdrop-blur-lg flex justify-center items-center overflow-x-hidden overflow-y-auto md:inset-0 h-screen max-h-full">
     <div class="relative w-full max-w-md max-h-full">
       <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
         <button type="button"
@@ -145,9 +145,9 @@
         </a>
       </div>
 
-      <p class="font-Roboto text-white text-xs absolute px-4 bottom-4 z-30 lg:text-primary">
+      <p class="font-Roboto text-white text-xs absolute px-4 bottom-4 z-30 lg:text-secondary">
         <span class="text-third uppercase">Atenção:</span>
-        Não transportamos FAST FOOD. Somente com entregas programadas.
+        Não transportamos FAST FOOD. Somente entregas programadas.
       </p>
     </div>
   </header>
@@ -278,7 +278,8 @@
     <section
       class="flex flex-wrap justify-evenly items-center gap-6 bg-zinc-200 px-4 py-12 sm:flex-nowrap sm:flex-row-reverse">
 
-      <img src="./images/desktop.png" class="sm:w-1/2 lg:w-none" alt="">
+      <img src="./images/desktop.png" srcset="" class="sm:w-1/2 lg:w-none"
+        alt="Imagem do desktop do sistema da mothoexpress">
 
       <div class="p-6 flex-2">
         <h2 class="font-Rubik text-primary text-xl lg:text-1xl md:max-w-[650px] xl:text-4xl xl:max-w-[850px]">
@@ -308,17 +309,17 @@
 
       <div class="flex flex-wrap justify-center gap-12">
 
-        <article class="bg-white rounded-lg px-6 flex flex-col justify-evenly w-72 h-72 lg:w-64">
+        <article class="bg-white rounded-lg p-6 flex flex-col gap-5 w-72 h-72 lg:w-64">
           <i class="ph ph-devices text-5xl text-third"></i>
           <h3 class="text-primary text-xl">
-            Você solicita a coleta
+            Você solicita a <br> coleta
           </h3>
-          <p class="text-secondary text-base">
+          <p class="text-secondary">
             Faça a solicitação da coleta via APP ou pela WEB.
           </p>
         </article>
 
-        <article class="bg-white rounded-lg px-6 flex flex-col justify-evenly w-72 h-72 lg:w-64">
+        <article class="bg-white rounded-lg p-6 flex flex-col gap-5 w-72 h-72 lg:w-64">
           <i class="ph ph-truck text-5xl text-third"></i>
           <h3 class="text-primary text-xl">
             Condutor aceita o pedido
@@ -328,7 +329,7 @@
           </p>
         </article>
 
-        <article class="bg-white rounded-lg px-6 flex flex-col justify-evenly w-72 h-72 lg:w-64">
+        <article class="bg-white rounded-lg p-6 flex flex-col gap-5 w-72 h-72 lg:w-64">
           <i class="ph ph-map-trifold text-5xl text-third"></i>
           <h3 class="text-primary text-xl">
             Roterização inteligente
@@ -338,7 +339,7 @@
           </p>
         </article>
 
-        <article class="bg-white rounded-lg px-6 flex flex-col justify-evenly w-72 h-72 lg:w-64">
+        <article class="bg-white rounded-lg p-6 flex flex-col gap-5 w-72 h-72 lg:w-64">
           <i class="ph ph-users text-5xl text-third"></i>
           <h3 class="text-primary text-xl">
             Acompanhamento do cliente
@@ -348,7 +349,7 @@
           </p>
         </article>
 
-        <article class="bg-white rounded-lg px-6 flex flex-col justify-evenly gap-5 w-72 h-72 lg:w-64">
+        <article class="bg-white rounded-lg p-6 flex flex-col gap-5 w-72 h-72 lg:w-64">
           <i class="ph ph-camera text-5xl text-third"></i>
           <h3 class="text-primary text-xl">
             Comprovante de entrega
@@ -362,17 +363,18 @@
 
     <!-- Bloco do entregador -->
     <section class="bg-no-repeat bg-cover p-6 md:min-h-[90vh] md:p-40"
-      style="background-image: url(./images/motoBoy.jpg)">
-      <article class="bg-white rounded-lg drop-shadow-md p-6 max-w-md">
+      style="background-image: url(./images/entregador.png)">
+
+      <article class="bg-zinc-100 rounded-lg drop-shadow-2xl p-6 max-w-md">
         <h3 class="text-third text-xl md:text-4xl">
           Ganhe dinheiro como entregador!
         </h3>
 
-        <p class="text-secondary mt-4 md:text-lg">
+        <p class="text-primary mt-4 md:text-lg">
           Trabalhe no seu tempo, defina o melhor horário para fazer as entregas. Gerencie tudo na palma da sua mão.
         </p>
 
-        <p class="text-secondary mt-4 md:text-lg">
+        <p class="text-primary mt-4 md:text-lg">
           Clique no botão abaixo e faça o seu cadastro para ser um de nossos condutoroes!
           <a href="https://drive.google.com/drive/folders/1Vmf3q8659ICijztapYamDPTd07_G-8LH" target="_blank"
             rel="noopener noreferrer" class="underline">Leia os termos de uso</a>
