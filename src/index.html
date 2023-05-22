@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -17,27 +17,22 @@
   <meta name="keywords"
     content="entregador, entregadores, delivery, mothoExpress, motho express, tecnologia de entrega" />
 
-  <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png" />
-  <link rel="manifest" href="/images/favicon/site.webmanifest" />
-  <meta name="theme-color" content="#000000">
-  </meta>
-
-
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Rubik:wght@700&display=swap"
     rel="stylesheet" />
 
-  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
-  <script src="./js/tailwind-config.js" type="module" defer></script>
+  <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png" />
+  <link rel="manifest" href="./images/favicon/site.webmanifest" />
+  <meta name="theme-color" content="#000000">
+  </meta>
 
-  <link rel="stylesheet" href="./styles/global.css" />
+  <link rel="stylesheet" href="./styles.css" />
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css" rel="stylesheet" />
-
   <title>HOME | Motho Express</title>
+
 </head>
 
 <body>
@@ -87,7 +82,7 @@
   <!-- navBar -->
   <nav class="absolute z-40 top-0 bg-whiteAlfa w-full">
     <div class="max-w-screen flex flex-wrap items-center justify-between mx-auto px-4 py-4">
-      <a href="/index.html" class="flex items-center">
+      <a href="#header" class="flex items-center">
         <img src="./images/motho-logo.png" class="h-8" alt="MothoExpress Logo" loading="lazy" />
       </a>
       <button data-collapse-toggle="navbar-default" type="button"
@@ -142,30 +137,33 @@
 
   <!-- Hero -->
   <header>
-    <div class="overlay h-[90vh] relative bg-cover bg-no-repeat bg-[90%] lg:bg-center xl:px-48"
-      style="background-image: url(./images/hero.webp);" id="header">
+    <div class="bg-cover bg-no-repeat bg-[90%] lg:bg-center" style="background-image: url(./images/hero.webp);"
+      id="header">
 
-      <div class="max-w-lg z-20 absolute bottom-[20%] px-4">
-        <h1 class="font-Rubik text-2xl text-white md:text-3xl lg:text-primary xl:text-4xl">
-          Conectamos você com os melhores entregadores da sua cidade!
-        </h1>
+      <div class="h-[90vh] relative backdrop-brightness-50 lg:backdrop-filter-none xl:px-48">
 
-        <p class="font-Roboto text-white mt-8 md:mt-5 md:text-xl lg:text-secondary">
-          Entre em contato conosco agora mesmo e ganhe 10km totalmente grátis para
-          experimentar os nossos serviços na sua empresa. Consulte condições.
+        <div class=" max-w-lg z-20 absolute bottom-[20%] px-4">
+          <h1 class="font-Rubik text-2xl text-white md:text-3xl lg:text-primary xl:text-4xl">
+            Conectamos você com os melhores entregadores da sua cidade!
+          </h1>
+
+          <p class="font-Roboto text-white mt-8 md:mt-5 md:text-xl lg:text-secondary">
+            Entre em contato conosco agora mesmo e ganhe 10km totalmente grátis para
+            experimentar os nossos serviços na sua empresa. Consulte condições.
+          </p>
+
+          <a href="https://api.whatsapp.com/send?phone=5544988198091&text=Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20cr%C3%A9ditos%20em%20quil%C3%B4metros"
+            target="_blank" rel="noopener noreferrer"
+            class="font-Roboto text-white font-medium bg-third py-3 px-6 rounded-full inline-block border-2 border-third transition-all hover:bg-transparent mt-5 md:mt-28 md:hover:text-third">
+            Experimente Grátis
+          </a>
+        </div>
+
+        <p class="font-Rubik text-white text-xs absolute px-4 bottom-4 z-30 lg:text-secondary">
+          <span class="text-third uppercase">Atenção:</span>
+          Não transportamos FAST FOOD. Somente entregas programadas.
         </p>
-
-        <a href="https://api.whatsapp.com/send?phone=5544988198091&text=Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20cr%C3%A9ditos%20em%20quil%C3%B4metros"
-          target="_blank" rel="noopener noreferrer"
-          class="font-Roboto text-white font-medium bg-third py-3 px-6 rounded-full inline-block border-2 border-third transition-all hover:bg-transparent mt-5 md:mt-28 md:hover:text-third">
-          Experimente Grátis
-        </a>
       </div>
-
-      <p class="font-Roboto text-white text-xs absolute px-4 bottom-4 z-30 lg:text-secondary">
-        <span class="text-third uppercase">Atenção:</span>
-        Não transportamos FAST FOOD. Somente entregas programadas.
-      </p>
     </div>
   </header>
 
@@ -613,7 +611,7 @@
   </script>
   <script src="https://unpkg.com/@phosphor-icons/web" defer async></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js" defer async></script>
-  <script src="./js/modal.js" defer></script>
+  <script src="./modal.js" defer></script>
 </body>
 
 </html>

@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -23,7 +27,6 @@ h4 {
 }
 
 .swiper-container {
-  /* height: calc(50vh - 120px); */
   padding: 20px 0;
 }
 
@@ -34,20 +37,4 @@ h4 {
 .swiper-slide {
   overflow: hidden;
   background-position: center center;
-}
-
-/* overlay do header mobile */
-
-.overlay:after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background-color: rgba(0, 0, 0, 0.6);
-  z-index: 10;
-}
-
-@media (min-width: 1024px) {
-  .overlay:after {
-    content: none;
-  }
 }

@@ -1,4 +1,6 @@
-export default tailwind.config = {
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: ["./src/**/*.{html,js}"],
   theme: {
     extend: {
       fontFamily: {
@@ -15,7 +17,8 @@ export default tailwind.config = {
       backgroundImage: {
         'image-servicos': 'url(./images/servicos.webp)',
         'image-howTo': 'url(./images/entregas.webp)'
-      }
-    }
-  }
+      },
+    },
+  },
+  plugins: [],
 }
